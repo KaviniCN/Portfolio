@@ -1,6 +1,8 @@
+import { useRef } from "react";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { ReactComponent as ArrowDownIcon } from "../icons/fast-forward-arrow-down.svg";
 
 const colorVariants = {
@@ -50,17 +52,17 @@ function CaseStudy({ title, subTitle, desc, imageUrl, bgColor, route }) {
 
   return (
     <div
-      className={`flex ${colorVariants[bgColor]} sm:flex-row flex-col rounded-[20px]`}
+      className={`flex ${colorVariants[bgColor]} align-baseline sm:flex-row flex-col rounded-[20px] h-[570px]`}
     >
-      <div className="sm:pl-16 sm:py-20 pt-[30px]">
+      <div className="sm:pl-16 sm:py-20 pt-[30px] self-center shrink-0">
         <img
           alt="linkedin"
           src={imageUrl}
           className="w-[300px] sm:w-[658px] m-auto"
         />
       </div>
-      <div className="sm:ml-16 max-w-[730px] text-white pb-[30px] sm:pb-20  sm:text-start text-center">
-        <div className="mt-4 sm:mt-28 tex-xl sm:text-[58px] sm:leading-[70px] font-semibold">
+      <div className="sm:ml-16 sm:mr-[60px] max-w-[730px] self-center text-white sm:text-start text-center">
+        <div className="tex-xl sm:text-[58px] sm:leading-[70px] font-semibold">
           {title}
         </div>
         <div className="mt-2 sm:text-[30px] text-base sm:leading-[36px] font-normal">
@@ -81,6 +83,11 @@ function CaseStudy({ title, subTitle, desc, imageUrl, bgColor, route }) {
 }
 
 function Home() {
+  const myRef = useRef(null);
+
+  const executeScroll = () => myRef.current.scrollIntoView();
+  // run this function from an event handler or an effect to execute scroll
+
   return (
     <div className="overflow-scroll">
       <Header />
@@ -97,9 +104,12 @@ function Home() {
               Checkout my work
             </span>
           </div>
-          <div className="rounded-full translate-y-1/2 sm:translate-y-0 p-2 sm:p-5 shadow-[0_0_8px_rgba(0,0,0,0.25)] ml-[78px] w-fit sm:ml-[140px] z-40 sm:mt-[14px] relative bg-[#F5F5F5]">
+          <button
+            onClick={executeScroll}
+            className="rounded-full translate-y-1/2 sm:translate-y-0 p-2 sm:p-5 shadow-[0_0_8px_rgba(0,0,0,0.25)] ml-[78px] w-fit sm:ml-[140px] z-40 sm:mt-[14px] relative bg-[#F5F5F5]"
+          >
             <ArrowDownIcon className="sm:h-8 sm:w-8 h-4 w-4" />
-          </div>
+          </button>
           <div className="bg-gradient-to-r mix-blend-multiply from-[#8758FF] to-[#52B3DA] p-[30px] sm:h-[400px] sm:-mt-[34px] relative sm:pt-28 sm:pl-20">
             <div className="sm:w-[1096px] text-base sm:text-[34px] text-white sm:leading-[42px]">
               Hi, I am a dedicated UI/UX designer who brings ideas to life
@@ -109,15 +119,21 @@ function Home() {
             </div>
             <hr className="sm:w-[1096px] mt-4 sm:mt-10 bottom-1 border" />
             <div className="flex mt-4 sm:mt-8 gap-4">
-              <img alt="linkedin" src="/linkedin.png" className="h-8 w-8" />
-              <img alt="behance" src="/behance.png" className="h-8 w-8" />
+              <a href="https://www.linkedin.com/in/kavinicn" target="__blank">
+                <img alt="linkedin" src="/linkedin.png" className="h-8 w-8" />
+              </a>
+              <a href="https://www.behance.net/kavininanayak" target="__blank">
+                <img alt="behance" src="/behance.png" className="h-8 w-8" />
+              </a>
             </div>
           </div>
           {/* <div className="absolute right-0 -translate-y-full z-50 w-[700px] h-[812px] "></div> */}
         </div>
       </div>
-
-      <div className="px-[30px] sm:px-20 pt-[30px] sm:pt-[72px] flex flex-col">
+      <div
+        ref={myRef}
+        className="px-[30px] sm:px-20 pt-[30px] sm:pt-[72px] flex flex-col"
+      >
         <div className="text-xl sm:text-[48px] text-center sm:text-start sm:leading-[58px] font-semibold mb-[30px]">
           Projects
         </div>
@@ -137,6 +153,12 @@ function Home() {
           )}
         </div>
       </div>
+      <div className="text-center mt-10 sm:mt-20">
+        <button className="font-semibold text-base sm:text-2xl py-3 px-4 sm:py-[14px] sm:px-[22px] rounded-md border-2 text-[#5CB8E4] border-[#5CB8E4]">
+          View more
+        </button>
+      </div>
+      <Footer />
     </div>
   );
 }

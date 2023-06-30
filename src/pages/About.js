@@ -12,32 +12,28 @@ function About() {
           className="w-[280px] m-auto -translate-y-1/2"
         />
         <div className="mx-auto w-full -m-[110px] pb-[60px]">
-          Hi there! I'm Kavini, a skilled UI/UX designer with 1+ years of
-          experience in creating engaging digital experiences. My expertise
-          includes user research, wireframing, prototyping, usability testing
-          and have a deep understanding of how design can enhance user
-          experiences and drive business goals.
+        Hi there! I am a UI/UX designer with a Bachelor's degree in Information
+          Systems from University of Colombo School of Computing. Initially, I
+          followed the path of Software Engineering  to enhance my practical skills
+          and expand my technical expertise. During my time in the Software Engineering
+          role, I discovered my passion for design and realized that it was the area
+          where I could truly make a meaningful impact. Motivated by this realization,
+          I took the initiative to learn UI/UX fundamentals through online courses,
+          sharpened my skills in crafting visually appealing and user-centered designs.
           <br />
-          <br /> I'm passionate about designing solutions that make a real
-          impact, and I love collaborating with cross-functional teams to bring
-          ideas to life. I thrive in fast-paced environments and am always
-          looking for new challenges and opportunities to learn and grow. <br />
+          <br /> With my newfound knowledge, I secured a position as a UI/UX designer
+          where I specialized in visual design and gained valuable experience over the
+          course of 1 year. I was eager to expand my expertise across all aspects of
+          UI/UX design. To achieve this goal, I enrolled in the General Assembly UX
+          Design Immersive program, which provided me with hands-on experience of
+          the end-to-end journey in UI/UX design <br />
           <br />
-          In my previous roles, I have successfully designed and launched
-          products that have received positive user feedback and exceeded
-          business goals. I'm always seeking new challenges and opportunities to
-          grow and learn, and I'm excited to leverage my skills to create
-          impactful solutions for your organization.
-          <br />
-          <br /> Outside of work, I enjoy cooking, travelling and watching
-          movies. If you're looking for a passionate UI/UX designer who is
-          dedicated to creating impactful solutions, let's connect!
-          <br />
-          <br /> I am currently seeking new opportunities to contribute to
-          meaningful projects and further develop my skills in UI/UX design. If
-          you're interested in collaborating or have any design-related
-          inquiries, please don't hesitate to reach out to me at
-          kavininanayakkara@gmail.com.
+          In my previous role, I have successfully designed and launched products
+          that have received positive user feedback and exceeded business goals.
+          I'm always seeking new challenges and opportunities to learn and develop
+          my skills in UI/UX design. If you're interested in collaborating or have
+          any design-related inquiries, please don't hesitate to reach out to me at
+          kavininanayakkara@gmail.com
           <br />
           <br /> Let's create exceptional experiences together!
         </div>
