@@ -5,17 +5,17 @@ function About() {
   return (
     <>
       <Header />
-      <div className="px-[30px]">
-        <div className="text-[30px] font-semibold text-center mb-[95px]">
+      <div className="px-[30px] sm:px-20">
+        <div className="text-[30px] sm:text-[50px] font-semibold text-center mb-[95px]">
           About Me
         </div>
-        <div className="mx-auto px-[15px] text-white text-2xl bg-gradient-to-r from-[#8758FF] to-[#52B3DA] rounded-xl">
+        <div className="mx-auto px-[15px] sm:mt-[200px] text-white text-2xl bg-gradient-to-r from-[#8758FF] to-[#52B3DA] rounded-xl">
           <img
             src="/about-me.png"
             alt="about-me"
-            className="w-[150px] m-auto -translate-y-1/2"
+            className="w-[150px] sm:w-[280px] m-auto -translate-y-1/2"
           />
-          <div className="text-base text-center -mt-[35px] pb-[60px]">
+          <div className="text-base sm:w-full sm:text-[26px] text-center -mt-[35px] sm:-mt-[110px] sm:font-normal  pb-[60px] sm:px-[50px] font-sans sm:text-start sm:leading-[126%]">
             Hi there! I am a UI/UX designer with a Bachelor's degree in
             Information Systems from University of Colombo School of Computing.
             Initially, I followed the path of Software Engineering to enhance my
