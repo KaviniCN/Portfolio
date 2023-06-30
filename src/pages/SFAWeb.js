@@ -487,13 +487,14 @@ const WebSFA = () => {
             </div>
             <div>
               <video
-                src="/desktop.mov"
+                src="https://res.cloudinary.com/dtrm49ag9/video/upload/v1688130279/desktop.mp4"
                 type="video/mp4"
                 width="auto"
                 height="auto"
                 autoplay
                 muted
                 playsinline
+                controls
               />
             </div>
             <div className="mt-10 text-center">
@@ -511,13 +512,14 @@ const WebSFA = () => {
             </div>
             <div>
               <video
-                src="/mobile.mov"
+                src="https://res.cloudinary.com/dtrm49ag9/video/upload/v1688127769/mobile_gcs5ih.mov"
                 type="video/mp4"
                 width="300"
                 height="auto"
                 autoplay
                 muted
                 playsinline
+                controls
               />
             </div>
             <div className="text-center mt-10">
@@ -585,10 +587,56 @@ const WebSFA = () => {
             A/B Testing{" "}
           </div>
           <div className="mt-12 text-xl">
-            We conducted an A/B test to analyze and compare the performance of 2
-            variations of the landing page. The goal was to determine which
-            version offers the best user experience and provides an easier way
-            for users to find relevant information.
+            We conducted an A/B test with 10 participants for each group to
+            analyze and compare the performance of 2 variations of the landing
+            page. The goal was to determine which version offers the best user
+            experience and provides an easier way for users to find relevant
+            information.
+          </div>
+          <div className="mt-20 flex gap-10">
+            <div className="basis-1/2">
+              <div className="font-semibold text-xl mb-10 text-center">
+                Version A
+              </div>
+              <div>
+                <video
+                  src="/desktop.mov"
+                  type="video/mp4"
+                  width="auto"
+                  height="auto"
+                  autoplay
+                  muted
+                  playsinline
+                  className="m-auto"
+                />
+              </div>
+              \
+            </div>
+            <div className="basis-1/2">
+              <div className="font-semibold text-xl mb-10 text-center">
+                Version B
+              </div>
+              <div>
+                <video
+                  className="m-auto"
+                  src="https://res.cloudinary.com/dtrm49ag9/video/upload/v1688127769/mobile_gcs5ih.mov"
+                  type="video/mp4"
+                  width="300"
+                  height="auto"
+                  autoplay
+                  muted
+                  playsinline
+                  controls
+                />
+              </div>
+            </div>
+          </div>
+          <div className="mt-12">
+            <img
+              className="w-[1368px] m-auto"
+              src="/ab.png"
+              alt="usability-table"
+            />
           </div>
         </div>
         <div className="mt-20">
