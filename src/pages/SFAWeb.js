@@ -205,9 +205,9 @@ const WebSFA = () => {
           </div>
           <div className="mt-12">
             <img
-              className="w-[1240px] m-auto"
-              src="/usability-testing-result.png"
-              alt="usability-testing-result"
+              className="w-[828px] m-auto"
+              src="/usability-testing-results.png"
+              alt="usability-testing-results"
             />
           </div>
         </div>
@@ -251,21 +251,14 @@ const WebSFA = () => {
           </div>
           <div className="mt-12">
             <img
-              className="w-[1240px] m-auto"
-              src="/competitive-analysis.png"
-              alt="competitive-analysis"
-            />
-          </div>
-          <div className="mt-12">
-            <img
-              className="w-[1240px] m-auto"
+              className="w-[866px] m-auto"
               src="/persona1.png"
               alt="persona2"
             />
           </div>
           <div className="mt-12">
             <img
-              className="w-[1240px] m-auto"
+              className="w-[866px] m-auto"
               src="/persona2.png"
               alt="persona1"
             />
@@ -491,9 +484,8 @@ const WebSFA = () => {
                 type="video/mp4"
                 width="auto"
                 height="auto"
-                autoplay
+                autoPlay
                 muted
-                playsinline
                 controls
               />
             </div>
@@ -501,6 +493,7 @@ const WebSFA = () => {
               <a
                 className="text-center text-blue-700 underline"
                 href="https://www.figma.com/proto/kGBUXaUW3yZdyNi66lMB8g/SFA-Prototype?page-id=0%3A1&type=design&node-id=173-8781&viewport=7105%2C1161%2C0.09&scaling=scale-down&starting-point-node-id=173%3A8781&mode=design&t=wvaoGwFdup8VdlD6-1"
+                target="__blank"
               >
                 Desktop prototype link
               </a>
@@ -516,9 +509,8 @@ const WebSFA = () => {
                 type="video/mp4"
                 width="300"
                 height="auto"
-                autoplay
+                autoPlay
                 muted
-                playsinline
                 controls
               />
             </div>
@@ -526,6 +518,7 @@ const WebSFA = () => {
               <a
                 className="text-center text-blue-700 underline"
                 href="https://www.figma.com/proto/NiApASoXjo2NWUpRLIIRlh/SFA-Mobile-Prototype?page-id=0%3A1&type=design&node-id=1-730&viewport=457%2C439%2C0.19&t=4XAPMH4CdEP8ahYZ-1&scaling=scale-down&starting-point-node-id=1%3A355&mode=design"
+                target="__blank"
               >
                 Mobile prototype link
               </a>
@@ -600,14 +593,14 @@ const WebSFA = () => {
               </div>
               <div>
                 <video
-                  src="/desktop.mov"
+                  src="https://res.cloudinary.com/dtrm49ag9/video/upload/v1688129187/Old_landing_page_niol3q.mov"
                   type="video/mp4"
                   width="auto"
                   height="auto"
-                  autoplay
+                  autoPlay
                   muted
-                  playsinline
                   className="m-auto"
+                  controls
                 />
               </div>
               \
@@ -619,13 +612,12 @@ const WebSFA = () => {
               <div>
                 <video
                   className="m-auto"
-                  src="https://res.cloudinary.com/dtrm49ag9/video/upload/v1688127769/mobile_gcs5ih.mov"
+                  src="https://res.cloudinary.com/dtrm49ag9/video/upload/v1688132416/new%20landing%20page.mp4"
                   type="video/mp4"
-                  width="300"
+                  width="auto"
                   height="auto"
-                  autoplay
+                  autoPlay
                   muted
-                  playsinline
                   controls
                 />
               </div>

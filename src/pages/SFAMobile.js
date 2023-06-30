@@ -518,9 +518,8 @@ const MobileSFA = () => {
                 type="video/mp4"
                 width="auto"
                 height="auto"
-                autoplay
+                autoPlay
                 muted
-                playsinline
                 controls
               />
             </div>
@@ -528,6 +527,7 @@ const MobileSFA = () => {
               <a
                 className="text-center text-blue-700 underline"
                 href="https://www.figma.com/proto/kGBUXaUW3yZdyNi66lMB8g/SFA-Prototype?page-id=0%3A1&type=design&node-id=173-8781&viewport=7105%2C1161%2C0.09&scaling=scale-down&starting-point-node-id=173%3A8781&mode=design&t=wvaoGwFdup8VdlD6-1"
+                target="__blank"
               >
                 Desktop prototype link
               </a>
@@ -543,9 +543,8 @@ const MobileSFA = () => {
                 type="video/mp4"
                 width="200"
                 height="auto"
-                autoplay
+                autoPlay
                 muted
-                playsinline
                 className="m-auto"
                 controls
               />
@@ -554,6 +553,7 @@ const MobileSFA = () => {
               <a
                 className="text-center text-blue-700 underline"
                 href="https://www.figma.com/proto/NiApASoXjo2NWUpRLIIRlh/SFA-Mobile-Prototype?page-id=0%3A1&type=design&node-id=1-730&viewport=457%2C439%2C0.19&t=4XAPMH4CdEP8ahYZ-1&scaling=scale-down&starting-point-node-id=1%3A355&mode=design"
+                target="__blank"
               >
                 Mobile prototype link
               </a>
@@ -627,13 +627,13 @@ const MobileSFA = () => {
               </div>
               <div>
                 <video
-                  src="/desktop.mov"
+                  src="https://res.cloudinary.com/dtrm49ag9/video/upload/v1688129187/Old_landing_page_niol3q.mov"
                   type="video/mp4"
                   width="auto"
                   height="auto"
-                  autoplay
+                  autoPlay
                   muted
-                  playsinline
+                  controls
                 />
               </div>
             </div>
@@ -643,14 +643,14 @@ const MobileSFA = () => {
               </div>
               <div>
                 <video
-                  src="/mobile.mov"
+                  src="https://res.cloudinary.com/dtrm49ag9/video/upload/v1688132416/new%20landing%20page.mp4"
                   type="video/mp4"
-                  width="200"
+                  width="auto"
                   height="auto"
-                  autoplay
+                  autoPlay
                   muted
-                  playsinline
                   className="m-auto"
+                  controls
                 />
               </div>
             </div>

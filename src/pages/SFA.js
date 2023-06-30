@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import WebSFA from "./SFAWeb";
 import MobileSFA from "./SFAMobile";
+import Footer from "../components/Footer";
 
 function SFA() {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,7 +20,12 @@ function SFA() {
     window.addEventListener("resize", handleResize);
   });
 
-  return <div className="w-full bg-white">{isMobile ? <MobileSFA /> : <WebSFA />}</div>;
+  return (
+    <div className="w-full bg-white">
+      {isMobile ? <MobileSFA /> : <WebSFA />}
+      <Footer/ >
+    </div>
+  );
 }
 
 export default SFA;
