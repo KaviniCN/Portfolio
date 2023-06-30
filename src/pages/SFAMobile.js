@@ -514,13 +514,14 @@ const MobileSFA = () => {
             </div>
             <div>
               <video
-                src="/desktop.mov"
+                src="https://res.cloudinary.com/dtrm49ag9/video/upload/v1688130279/desktop.mp4"
                 type="video/mp4"
                 width="auto"
                 height="auto"
                 autoplay
                 muted
                 playsinline
+                controls
               />
             </div>
             <div className="mt-6 text-center">
@@ -538,7 +539,7 @@ const MobileSFA = () => {
             </div>
             <div>
               <video
-                src="/mobile.mov"
+                src="https://res.cloudinary.com/dtrm49ag9/video/upload/v1688127769/mobile_gcs5ih.mov"
                 type="video/mp4"
                 width="200"
                 height="auto"
@@ -546,6 +547,7 @@ const MobileSFA = () => {
                 muted
                 playsinline
                 className="m-auto"
+                controls
               />
             </div>
             <div className="text-center mt-6">
