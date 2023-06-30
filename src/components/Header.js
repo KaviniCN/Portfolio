@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="">
       <nav className="text-cool-gray-100">
-        <div className="flex font-sans font-normal text-base justify-center sm:justify-end mt-10 sm:gap-12 gap:6 sm:pr-20 mb-9 sm:mb-0">
+        <div className="flex font-sans font-normal text-base justify-center sm:justify-end mt-10 sm:gap-12 gap-6 sm:pr-20 mb-9 sm:mb-0">
           <Link to="/">
             Work
             {location.pathname === "/" ? (
