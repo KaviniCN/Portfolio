@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="">
       <Header />
-      <div className="text-[50px] font-semibold text-center">About Me </div>
+      <div className="text-[50px] font-semibold text-center">About Me</div>
       <div className="mx-auto m-[220px] px-12 w-[1280px] text-white text-2xl bg-gradient-to-r from-[#8758FF] to-[#52B3DA]">
         <img
           src="/about-me.png"

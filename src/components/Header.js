@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
@@ -12,12 +12,12 @@ const Header = () => {
             { label: "About", route: "/about" },
             { label: "Resume", route: "/resume.pdf" },
           ].map((item) => (
-            <a href={item.route} className="mr-4 flex flex-col">
+            <Link to={item.route} className="mr-4 flex flex-col">
               {item.label}
               {item.route === location.pathname ? (
                 <div className="w-[10px] h-[10px] bg-[#8758FF] rounded-full m-auto" />
               ) : null}
-            </a>
+            </Link>
           ))}
         </div>
       </nav>
