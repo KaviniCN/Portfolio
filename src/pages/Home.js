@@ -10,6 +10,7 @@ const colorVariants = {
   FF8755: "bg-[#FF8755]",
   "52B3DA": "bg-[#52B3DA]",
   205285: "bg-[#205285]",
+  B4171E: "bg-[#B4171E]",
 };
 
 const caseStudies = [
@@ -20,15 +21,25 @@ const caseStudies = [
     desc: "The revamping project for the Singapore Food Agency (SFA) website focused on delivering a seamless user experience and a refreshed appearance, ensuring a more efficient and enjoyable digital journey for SFA's audience",
     imageUrl: "/sfa.png",
     route: "/case-study/sfa",
+    buttonText: "Case Study",
   },
   {
-    bgColor: "FF8755",
-    title: "Vat 19",
-    subTitle: "UI/UX Designer",
-    desc: "The revamping project for the Vat 19 website aimed to enhance the overall customer experience and streamline the purchasing process by addressing the current outdated design and optimizing it for a more intuitive and efficient shopping experience",
-    imageUrl: "/vat19.png",
-    route: "/case-study/vat19",
+    bgColor: "B4171E",
+    title: "National Gallery Singapore",
+    subTitle: "UX Researcher",
+    desc: "This pro bono project for the National Gallery was driven by a mission to enhance specific low-traffic sections of their current website, with a focus on significantly improving the user experience and expanding the reach to a broader audience",
+    imageUrl: "/ngs.png",
+    route: "/case-study/ngs",
+    buttonText: "Case Study",
   },
+  // {
+  //   bgColor: "FF8755",
+  //   title: "Vat 19",
+  //   subTitle: "UI/UX Designer",
+  //   desc: "The revamping project for the Vat 19 website aimed to enhance the overall customer experience and streamline the purchasing process by addressing the current outdated design and optimizing it for a more intuitive and efficient shopping experience",
+  //   imageUrl: "/vat19.png",
+  //   route: "/case-study/vat19",
+  // },
   {
     bgColor: "52B3DA",
     title: "World Airfares",
@@ -36,6 +47,9 @@ const caseStudies = [
     desc: "Introducing a new blog feature for World Airfares, a premier UK-based travel agency, where you can explore a collection of captivating travel blogs offering valuable insights and inspiring destinations",
     imageUrl: "/worldair.png",
     route: "/case-study/airfares",
+    buttonText: "View Design",
+    buttonLink:
+      "https://www.behance.net/gallery/155259469/World-Airfares-Blog-Design",
   },
   {
     bgColor: "205285",
@@ -44,10 +58,21 @@ const caseStudies = [
     desc: "Introducing a new blog feature for World Airfares, a premier UK-based travel agency, where you can explore a collection of captivating travel blogs offering valuable insights and inspiring destinations",
     imageUrl: "/travelcenter.png",
     route: "/case-study/trave-center",
+    buttonText: "View Design",
+    buttonLink: "https://www.behance.net/gallery/155351467/Travel-Center-UK",
   },
 ];
 
-function CaseStudy({ title, subTitle, desc, imageUrl, bgColor, route }) {
+function CaseStudy({
+  title,
+  subTitle,
+  desc,
+  imageUrl,
+  bgColor,
+  route,
+  buttonText,
+  buttonLink,
+}) {
   const navigate = useNavigate();
 
   return (
@@ -71,12 +96,20 @@ function CaseStudy({ title, subTitle, desc, imageUrl, bgColor, route }) {
         <div className="mt-4 sm:mt-6 sm:text-[24px] text-[15px] sm:leading-[28px] font-normal px-2">
           {desc}
         </div>
-        <button
-          className="mt-6 p-[10px] sm:px-6 sm:py-[14px] bg-white text-[#222831] font-semibold text-base sm:text-xl rounded-md"
-          onClick={() => navigate(route)}
-        >
-          Case Study
-        </button>
+        {!buttonLink ? (
+          <button
+            className="mt-6 p-[10px] sm:px-6 sm:py-[14px] bg-white text-[#222831] font-semibold text-base sm:text-xl rounded-md"
+            onClick={() => navigate(route)}
+          >
+            {buttonText}
+          </button>
+        ) : (
+          <a href={buttonLink} target="__blank">
+            <button className="mt-6 p-[10px] sm:px-6 sm:py-[14px] bg-white text-[#222831] font-semibold text-base sm:text-xl rounded-md">
+              {buttonText}
+            </button>
+          </a>
+        )}
       </div>
     </div>
   );
@@ -139,7 +172,16 @@ function Home() {
         </div>
         <div className="flex flex-col gap-[30px] sm:gap-12">
           {caseStudies.map(
-            ({ title, subTitle, desc, imageUrl, bgColor, route }) => (
+            ({
+              title,
+              subTitle,
+              desc,
+              imageUrl,
+              bgColor,
+              route,
+              buttonText,
+              buttonLink,
+            }) => (
               <CaseStudy
                 key={title}
                 title={title}
@@ -148,15 +190,19 @@ function Home() {
                 imageUrl={imageUrl}
                 bgColor={bgColor}
                 route={route}
+                buttonText={buttonText}
+                buttonLink={buttonLink}
               />
             )
           )}
         </div>
       </div>
       <div className="text-center mt-10 sm:mt-20">
-        <button className="font-semibold text-base sm:text-2xl py-3 px-4 sm:py-[14px] sm:px-[22px] rounded-md border-2 text-[#5CB8E4] border-[#5CB8E4]">
-          View more
-        </button>
+        <a href="https://www.behance.net/kavininanayak" target="__blank">
+          <button className="font-semibold text-base sm:text-2xl py-3 px-4 sm:py-[14px] sm:px-[22px] rounded-md border-2 text-[#5CB8E4] border-[#5CB8E4]">
+            View more
+          </button>
+        </a>
       </div>
       <Footer />
     </div>
