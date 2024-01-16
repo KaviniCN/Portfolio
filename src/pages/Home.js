@@ -29,8 +29,9 @@ const caseStudies = [
     subTitle: "UX Researcher",
     desc: "This pro bono project for the National Gallery was driven by a mission to enhance specific low-traffic sections of their current website, with a focus on significantly improving the user experience and expanding the reach to a broader audience",
     imageUrl: "/ngs.png",
-    route: "https://www.behance.net/gallery/189076543/Revamping-the-National-Gallery-Singapore-Website",
+    route: "/case-study/ngs",
     buttonText: "Case Study",
+    buttonLink: "https://www.behance.net/gallery/189076543/Revamping-the-National-Gallery-Singapore-Website"
   },
   // {
   //   bgColor: "FF8755",
